@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/faster_one"
+            android:text="TURF BD"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="55dp" />
+
+        <EditText
+            android:id="@+id/etLoginUserID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/searchpage_button_back"
+            android:drawableLeft="@drawable/account_logo"
+            android:drawablePadding="5dp"
+            android:focusable="true"
+            android:hint="ENTER NO: "
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColor="#000" />
+
+
+        <EditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/searchpage_button_back"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="5dp"
+            android:focusable="true"
+            android:hint="ENTER PASSWORD"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#000" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="10dp"
+                android:text="SIGN IN"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Create new account"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btnLoginRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="10dp"
+            android:text="SIGN UP"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+</ScrollView>
